@@ -10,6 +10,7 @@
     "pretty": "yarn prettier . --write"
   },
   "dependencies": {
+    "clsx": "^2.1.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
