@@ -29,7 +29,7 @@ const WheelList: React.FC<Props> = ({ wheelList, isLoading, isError }) => {
   }
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {wheelList.map((wheel) => (
         <WheelCard
           key={wheel.id}
