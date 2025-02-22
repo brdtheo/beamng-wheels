@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import { GoLinkExternal } from 'react-icons/go';
 
 import ContentWrapper from '@/components/ContentWrapper';
 
 const Header: React.FC = () => {
   return (
-    <header className="border-b border-b-bng-theme-hr h-12">
+    <header className=" bg-white fixed top-0 left-0 w-full z-10">
       <ContentWrapper className="h-12 flex items-center justify-between">
         <h1 className="font-bold text-lg tracking-tight select-none">
           BeamNG
@@ -13,16 +12,23 @@ const Header: React.FC = () => {
             .wheels
           </i>
         </h1>
-
-        <Link
-          href="https://github.com/brdtheo/beamng-wheels"
-          className="flex items-center gap-1 text-sm font-medium text-bng-theme-text"
-          target="_blank"
-        >
-          GitHub
-          <GoLinkExternal fill="bng-theme-text" />
-        </Link>
       </ContentWrapper>
+      <div className="border-t border-t-bng-theme-hr bg-yellow-200 py-1">
+        <ContentWrapper className="">
+          <p className="text-sm break-words">
+            This project is now deprecated and will be closed on March 2, 2025.
+            A new, improved version of this website will be released on
+            <Link
+              target="_blank"
+              className="underline pl-1"
+              href="https://quarryside-auto.com"
+            >
+              https://quarryside-auto.com
+            </Link>
+            .
+          </p>
+        </ContentWrapper>
+      </div>
     </header>
   );
 };

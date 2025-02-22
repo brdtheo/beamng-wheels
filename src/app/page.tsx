@@ -24,9 +24,9 @@ export default function Home() {
   );
 
   return (
-    <main>
+    <main className='min-h-dvh'>
       <Header />
-      <ContentWrapper className="py-12">
+      <ContentWrapper className="pt-36 sm:pt-28 pb-12">
         <Pagination
           totalCount={response?.totalCount ?? 0}
           page={page}
